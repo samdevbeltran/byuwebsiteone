@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG">
   </head>
 
   <body>
     
-    <div id="content0">
-      <div class="container sticky-top">
+    <div class="container sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="logo-box">
-            <img src="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG" alt="logo image"/>
+           <a href="./index.html">
+            <img src="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG" alt="logo image"/>  
+          </a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -38,42 +40,40 @@
         </nav> 
       </div>  
       <main>        
-        <div class="blog-content0 container">
+        <div class="container">
           <div class="row">
-            <div class="col-lg-8 col-md-6 col-sm-12">
-              <div class="blog-banner0">
-                <img style="width:100%" src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Fpexels-pixabay-267569.jpg?v=1636243263788" alt="blog image">
-              </div>
-              <div id="blog-paragraph0">
-                <h3>
-                  Highlights from the past season
-                </h3>
-                <p>
-                  What an incredible season we have had. We celebrated our 50th year of running trips down the Grand Canyon. This year we ran 36 trips down the Grand Canyon introducing over 800 people to one of our favorite places on earth. We trained 4 new guides and welcomed them to our family. The season started off with some chilly weather in the early season, but our guests braved the cold and loved every minute of their trip (show pictures). Later the temperatures soared reaching highs of 120 F in the Grand canyon and 95 on the Salmon. We didn't have any trouble getting people in the water at those temperatures.
-                </p>
-              </div>
-              <div class="comment-area">
-                <label><strong>Leave a comment</strong></label>
-                <textarea></textarea>
+            <div class="blog-body-container col-lg-8 col-md-6 col-sm-12">
+              <img src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Fpexels-pixabay-267569.jpg?v=1636243263788" alt="blog image">
+              <h3>
+                Highlights from the past season
+              </h3>
+              <p>
+                What an incredible season we have had. We celebrated our 50th year of running trips down the Grand Canyon. This year we ran 36 trips down the Grand Canyon introducing over 800 people to one of our favorite places on earth. We trained 4 new guides and welcomed them to our family. The season started off with some chilly weather in the early season, but our guests braved the cold and loved every minute of their trip (show pictures). Later the temperatures soared reaching highs of 120 F in the Grand canyon and 95 on the Salmon. We didn't have any trouble getting people in the water at those temperatures.
+              </p>
+              <textarea placeholder="Leave a comment"></textarea>
                 <br>
-                <button>
-                  Send
-                </button>
-              </div>
+                <a href="javascript:void(0)">Send</a>
+                
             </div>
-            <aside class="col-lg-4 col-md-6 col-sm-12">
+            <aside id="owner-info"class="col-lg-4 col-md-6 col-sm-12">
               <h4>
                 Who am I?
               </h4>
               <br>
-              <div id="owner-blog-photo0">
+              <div id="owner-blog-photo">
                 <img src="https://cdn.glitch.com/8b01c498-05e0-4cad-9478-df868f57f675%2FperfilByu.png?v=1631709767423" alt="Samuel Beltran">
               </div>
-              <p>
-                I'm Sam, here I'll tell the experiences I've had with white water rafting, and hope you can also share with me thoughts about this topic.
-              </p>
-              <input type="search" id="blog-search" placeholder="search">
-              <button>Search</button>
+              <div id="owner-blog-text-cont">
+                <p>
+                  I'm Sam, here I'll tell the experiences I've had with white water rafting, and hope you can also share with me thoughts about this topic.
+                </p>
+                <input type="text" class="form-control" placeholder="search">
+                <span>
+                  <a href="javascript:void(0)" class="btn">Search</a>    
+                </span>
+                
+              </div>
+              
             </aside>
           </div>
         </div>
@@ -97,7 +97,6 @@
         </div>
       </div>        
     </footer>
-    </div>
     <script type="text/javascript" src="libraries/jquery/jquery3-6.js"></script>
     <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>

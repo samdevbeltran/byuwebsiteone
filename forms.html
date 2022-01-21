@@ -1,110 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Dry oar| home</title>
+    <title>Dry oar| contact us</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css"/>
+    <link rel="icon" href="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG">
   </head>
 
   <body class="toggle">
-    <div id="content">
-      <header>
+    <div class="container sticky-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="logo-box">
-          <img
-            src="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG"
-            alt="logo image"
-          />
+          <a href="./index.html">
+            <img src="https://byui-cit.github.io/wdd130/resources/images/logos/purpleraft.PNG" alt="logo image"/>  
+          </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="forms.html">Contact Me</a></li>
-            <li><a href="site-plan.html">Site Plan</a></li>
-          </ul>
-        </nav>
-      </header>
-      <main>
-        <div class="banner-box">
-          <img
-            src="https://byui-cit.github.io/wdd130/resources/images/river-wide.JPG"
-            alt="rivers and a boat"
-          />
-        </div>
-        <div id="feedback"></div>
-        <div class="form-container">
-          <form action="/my-handling-form-page" method="post">
-          <ul>
-            <li>
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="user_name" />
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home <span class="sr-only"></span></a>
             </li>
-            <li>
-              <label for="mail">E-mail:</label>
-              <input type="email" id="mail" name="user_email" />
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
             </li>
-            <li>
-              <label for="msg">Message:</label>
-              <textarea id="msg" name="user_message"></textarea>
+            <li class="nav-item">
+              <a class="nav-link" href="forms.html">Contact me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="site-plan.html">Site plan</a>
             </li>
           </ul>
-          <button type="submit">Send</button>
-        </form>
         </div>
-        
-      </main>
-      <footer>
-        <p>
-          &copy; 2021 Dry oar- Samuel Beltran - Section
-        </p>
-
-        <div class="social">
-          <p>
-            <a
-              target="_blank"
-              href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ffacebook.png?v=1633451117398"
-              ><img
-                alt="facebook logo"
-                src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ffacebook.png?v=1633451117398"
-            /></a>
-            <a
-              target="_blank"
-              href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Finstagram.png?v=1633451126290"
-              ><img
-                alt="instagram logo"
-                src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Finstagram.png?v=1633451126290"
-            /></a>
-            <a
-              target="_blank"
-              href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ftwitter.png?v=1633451126290"
-              ><img
-                alt="twitter logo"
-                src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ftwitter.png?v=1633451126290"
-            /></a>
-          </p>
-        </div>
-      </footer>
+      </nav> 
     </div>
-    <script>
-      // get the feedback div element so we can do something with it.
-      const feedbackElement = document.getElementById("feedback");
-      // get the form so we can read what was entered in it.
-      const formElement = document.forms[0];
-      // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-      formElement.addEventListener("submit", function(e) {
-        // stop the form from doing the default action
-        e.preventDefault();
-        // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-        feedbackElement.innerHTML =
-          "Hello " +
-          formElement.user_name.value +
-          "! Thank you for your message. We will get back with you as soon as possible!";
-        // make the feedback element visible.
-        feedbackElement.style.display = "block";
-        // add a class to move everything down so our message doesn't cover it.
-        document.body.classList.toggle("moveDown");
-      });
-    </script>
+    <header class="header">
+      <div class="container">
+        <div class="text-header">
+          <div class="banner-box-contact">
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="feedback"></div>
+      <div class="container">
+        <div id="contact-form-cont" class="row">
+          <form method="post">
+            <div class="form-group">
+              <ul>
+                <li>
+                  <input type="text" class="form-control" id="name" name="user_name" placeholder="Name:" />
+                </li>
+                <li>
+                  <input type="email" class="form-control" id="mail" name="user_email" placeholder="E-mail:" />
+                </li>
+                <li>
+                  <textarea id="msg" class="form-control" name="user_message" placeholder="Message:"></textarea>
+                </li>
+              </ul>
+            </div>
+            <button  class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    
+    </main>
+    <footer>
+      <div id="footer-content" class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 col-md-6">
+            <p>
+              &copy; 2021 Dry oar- Samuel Beltran - Section
+            </p>  
+          </div>
+          
+          <div class="social col-sm-12 col-lg-6 col-md-6">
+            <p>
+              <a target="_blank" href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ffacebook.png?v=1633451117398"><img alt="facebook logo" src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ffacebook.png?v=1633451117398"/></a>
+              <a target="_blank" href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Finstagram.png?v=1633451126290"><img alt="instagram logo" src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Finstagram.png?v=1633451126290"/></a>
+              <a target="_blank" href="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ftwitter.png?v=1633451126290"><img alt="twitter logo" src="https://cdn.glitch.me/8b01c498-05e0-4cad-9478-df868f57f675%2Ftwitter.png?v=1633451126290"/></a>
+            </p>
+          </div>
+        </div>
+      </div>        
+    </footer>
+    <script type="text/javascript" src="libraries/jquery/jquery3-6.js"></script>
+    <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="libraries/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>

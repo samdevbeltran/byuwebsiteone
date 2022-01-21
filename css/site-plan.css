@@ -1,15 +1,12 @@
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a | */
 @import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #4B8F8C;
-  --secondary-color: #7A306C;
-  --accent1-color: #AE8CA3;
-  --accent2-color: #007FFF;
+  --primary-color: #7A306C;
+  --secondary-color: #4B8F8C;
+  --accent1-color: #7A306C;
+  --accent2-color: #AE8CA3;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Source Sans Pro";
@@ -21,8 +18,8 @@ Fonts are separated by a | */
   --paragraph-color-on-white: black; /* paragraph text on a white background */
   --paragraph-color-on-color: #2A233C; /* paragraph text on a colored background */
   --text-background-color: #4B8F8C;
-  --nav-link-color: #FFFFFF;
-  --nav-background-color: #CCB7C6;
+  --nav-link-color: rgba(0,0,0,.55);
+  --nav-background-color: white;
   --nav-hover-link-color: #FFFFFF;
   --nav-hover-background-color: #AE8CA3;
 }
